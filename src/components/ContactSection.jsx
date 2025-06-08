@@ -66,67 +66,63 @@ const ContactSection = () => {
         </p>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
-          <div className='space-y-8'>
-            <h3 className='text-2xl font-semibold mb-6'>
-              Contact Information
-            </h3>
+          <div className="space-y-8 text-left">
+            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
-            <div className='space-y-6 justify-center'>
-              <div className='flex items-start space-x-4 '>
-                <div className='p-3 rounded-full bg-primary/10'>
-                  <Mail className='h-6 w-6 text-primary' />{" "}
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className='font-medium'>Email</h4>
+                  <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:elijaholusegun21@gmail.com"
-                    className='text-muted-foreground hover:text-primary transition-colors'
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     elijaholusegun21@gmail.com
                   </a>
                 </div>
               </div>
-              <div className='flex items-start space-x-4 '>
-                <div className='p-3 rounded-full bg-primary/10'>
-                  <Phone className='h-6 w-6 text-primary' />{" "}
+
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className='font-medium'>Telephone</h4>
+                  <h4 className="font-medium">Telephone</h4>
                   <a
-                    href="tel:+2349044356522.com"
-                    className='text-muted-foreground hover:text-primary transition-colors'
+                    href="tel:+2349044356522"
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    + (234) 9044356522
+                    + (234) 904 435 6522
                   </a>
                 </div>
               </div>
-              <div className='flex items-start space-x-4 '>
-                <div className='p-3 rounded-full bg-primary/10'>
-                  <MapPin className='h-6 w-6 text-primary' />{" "}
+
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className='font-medium'>Location</h4>
-                  <a
-                    className='text-muted-foreground hover:text-primary transition-colors'
-                  >
-                    Nigeria, Kaduna State
-                  </a>
+                  <h4 className="font-medium">Location</h4>
+                  <p className="text-muted-foreground">Nigeria, Kaduna State</p>
                 </div>
               </div>
             </div>
 
-            <div className='pt-8'>
-              <h4>Connect With Me</h4>
-              <div className='flex space-x-4 justify-center'>
+            <div className="pt-8 space-y-2">
+              <h4 className="font-medium">Connect With Me</h4>
+              <div className="flex space-x-4">
                 <a
-                  href="https://www.linkedin.com/in/elijah-ashaolu-467b49358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  href="https://www.linkedin.com/in/elijah-ashaolu-467b49358"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Linkedin />
                 </a>
                 <a
-                  href="https://www.instagram.com/coderblaq0?igsh=MTk1d3hydXoxaGFuZw=="
+                  href="https://www.instagram.com/coderblaq0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -135,61 +131,69 @@ const ContactSection = () => {
                 <a href="#">
                   <Facebook />
                 </a>
-
               </div>
             </div>
           </div>
-          <div className='bg-card p-8 rounded-lg shadow-xs'>
+
+          <div className='bg-card p-8 rounded-lg shadow-xs text-left'>
             <h3 className='text-2xl font-semibold mb-6'>Send a Message</h3>
             <form
-                action="https://formspree.io/f/mblydvgy"
-                method='POST'
-                className='space-y-6'
-                onSubmit={handleSubmit}
+              action="https://formspree.io/f/mblydvgy"
+              method='POST'
+              className='space-y-6'
+              onSubmit={handleSubmit}
             >
-              <div>
-                <label htmlFor="name" className='block text-sm font-medium mb-2'>
-                  {" "}
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  name='name'
-                  id='name'
-                  required
-                  className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
-                  placeholder='John Peter....'
+              <div className='space-y-4'>
+                {/* Name */}
+                <div>
+                  <label htmlFor="name" className='block text-sm font-medium mb-2'>
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    name='name'
+                    id='name'
+                    required
+                    className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
+                    placeholder='John Peter...'
+                  />
+                </div>
 
-                />
-                <label htmlFor="email" className='block text-sm font-medium mb-2'>
-                  {" "}
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  name='email'
-                  id='email'
-                  required
-                  className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
-                  placeholder='johnpeter@gmail.com '
+                {/* Email */}
+                <div>
+                  <label htmlFor="email" className='block text-sm font-medium mb-2'>
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    name='email'
+                    id='email'
+                    required
+                    className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
+                    placeholder='johnpeter@gmail.com'
+                  />
+                </div>
 
-                />
-                <label htmlFor="message" className='block text-sm font-medium mb-2'>
-                  {" "}
-                  Your Message
-                </label>
-                <textarea
-                  name='message'
-                  id='message'
-                  required
-                  className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none '
-                  placeholder='hello, I would like to...'
-                ></textarea>
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className='block text-sm font-medium mb-2'>
+                    Your Message
+                  </label>
+                  <textarea
+                    name='message'
+                    id='message'
+                    required
+                    className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none'
+                    placeholder='Hello, I would like to...'
+                  ></textarea>
+                </div>
               </div>
+
+              {/* Submit Button */}
               <button
                 type='submit'
-                className={cn('cosmic-button w-full flex items-center justify-center gap-2',
-
+                className={cn(
+                  'cosmic-button w-full flex items-center justify-center gap-2'
                 )}
               >
                 Send Message
@@ -197,6 +201,7 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Send } from 'lucide-react'
+import { Facebook, Instagrain, Mail, MapPin, Phone, Send } from 'lucide-react'
 import React from 'react'
 import { cn } from '../lib/utils'
 import toast from 'react-hot-toast'
@@ -106,7 +106,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">Nigeria, Kaduna State</p>
+                  <p className="text-muted-foreground">Nigeria, Lagos State</p>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const ContactSection = () => {
                   <Linkedin />
                 </a>
                 <a
-                  href="https://www.instagram.com/coderblaq0"
+                  href="https://www.instagram.com/coderblaq1?igsh=dWU5YThucjBrNW1m"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
